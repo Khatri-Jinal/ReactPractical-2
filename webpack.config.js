@@ -27,13 +27,9 @@ module.exports = {
   },
   // eslint-disable-next-line no-undef
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  devServer: {
-    // inline: true,
-    //port: 3000
-  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html'
+      template: './public/index.html'
     })
   ]
 };
